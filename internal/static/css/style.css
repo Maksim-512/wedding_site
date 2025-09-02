@@ -1,16 +1,16 @@
 :root {
-    --primary-color: #2e7d32; /* Основной зеленый */
-    --secondary-color: #4caf50; /* Светло-зеленый */
-    --accent-color: #81c784; /* Акцентный зеленый */
-    --text-color: #1b5e20; /* Темно-зеленый */
-    --light-text: #e8f5e9; /* Светлый кремово-зеленый */
-    --highlight: #a5d6a7; /* Подсветка */
-    --background: #f1f8e9; /* Светло-зеленый фон */
+    --primary-color: #2e7d32;
+    --secondary-color: #4caf50;
+    --accent-color: #81c784;
+    --text-color: #1b5e20;
+    --light-text: #e8f5e9;
+    --highlight: #a5d6a7;
+    --background: #f1f8e9;
     --dark-green: #2e7d32;
     --clr-text-1: #819071;
     --clr-text-2: #333333;
     --clr-primary: #819071;
-    --clr-background: #f1f5ec; /* светло-зеленый фон */
+    --clr-background: #f1f5ec;
     --clr-gold: #C6A961;
     --clr-cream: #F7F5F0;
     --clr-dark: #333333;
@@ -20,15 +20,13 @@
     box-sizing: border-box;
 }
 
-/* Hero Section */
 .hero-section {
     background:
             linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
             url('/static/images/iandvlada.jpg') center/cover no-repeat;
-    /*filter: grayscale(100%);*/
     height: 100vh;
     display: flex;
-    align-items: center; /* Вернули центрирование по вертикали */
+    align-items: center;
     justify-content: center;
     text-align: center;
     color: #ffffff;
@@ -39,32 +37,32 @@
     z-index: 2;
     max-width: 800px;
     padding: 0 20px;
-    /* Убрали transform */
-    margin-top: 10%; /* Сдвигаем весь блок немного вверх */
+    margin-top: 10%;
 }
 
 .save-the-date {
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
     letter-spacing: 0.5rem;
-    margin-bottom: 0.5rem; /* Уменьшили отступ снизу */
+    margin-bottom: 0.5rem;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-top: 0;
     padding-top: 0;
     position: relative;
-    top: -200px; /* Поднимаем выше */
+    top: -200px;
 }
 
 .names {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
+    font-style: italic;
     line-height: 1.3;
     margin-bottom: 0.5rem;
     color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     position: relative;
-    top: 10rem; /* Опускаем ниже */
+    top: 10rem;
 }
 
 .wedding-date {
@@ -76,38 +74,11 @@
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
     position: relative;
-    top: 10rem; /* Опускаем ниже */
+    top: 10rem;
 }
 
-/* Адаптивность */
-/*@media (max-width: 768px) {*/
-/*    .hero-section {*/
-/*        height: 70vh;*/
-/*    }*/
 
-/*    .save-the-date {*/
-/*        font-size: 2rem;*/
-/*        top: -50px;*/
-/*        letter-spacing: 0.3rem;*/
-/*    }*/
-
-/*    .names {*/
-/*        font-size: 1.5rem;*/
-/*        top: 30px;*/
-/*    }*/
-
-/*    .wedding-date {*/
-/*        font-size: 1.2rem;*/
-/*        top: 30px;*/
-/*        padding: 0.5rem 1rem;*/
-/*    }*/
-/*}*/
-
-
-/* Calendar Section */
 #calendar {
-    /*background-color: #f8f9fa; !* Светлый серо-бежевый фон *!*/
-    /*background-image: url('/static/images/background-plita.jpeg');*/
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -121,7 +92,7 @@
 #calendar h2 {
     font-family: 'Cormorant Garamond', serif;
     color: var(--clr-text-1);
-    /*font-size: 5rem;*/
+    font-style: italic;
     margin-bottom: 1rem;
 }
 
@@ -133,14 +104,18 @@
     font-size: 4rem;
 }
 
+
+#location p {
+    font-size: 2.5rem;
+}
+
 p {
     color: var(--clr-text-2);
     font-family: 'Cormorant Garamond', 'Georgia', serif;
-    /*font-family: "Montserrat", serif;*/
     margin-bottom: 1.5rem;
-    margin-top: 0;
-    font-size: 1.9rem;
-    line-height: 1.8;
+    margin-top: 3rem;
+    font-size: 3rem;
+    line-height: 1;
 }
 
 #calendar p {
@@ -160,14 +135,7 @@ p {
 
 
 .month h3 {
-    /*color: #2e7d32; !* Темно-зеленый *!*/
-    /*font-family: 'Playfair Display', serif;*/
-
-    /*font-family: 'Cormorant Garamond', serif;*/
-
     color: var(--clr-text-1);
-
-    /*color: var(--clr-text-2);*/
     font-family: 'Cormorant Garamond', serif;
     font-size: 2rem;
     margin-bottom: 0;
@@ -175,10 +143,7 @@ p {
 }
 
 .wedding-date-calendar {
-    /*color: #2e7d32; !* Темно-зеленый *!*/
-
     color: var(--clr-text-1);
-
     font-size: 1.2rem;
     margin-bottom: 2rem;
     font-weight: 500;
@@ -192,24 +157,21 @@ table {
 }
 
 th {
-    color: #5a5a5a; /* Серый */
+    color: #5a5a5a;
     font-weight: 500;
     padding: 0.5rem;
     font-size: 0.9rem;
 }
 
 td {
-    color: #333; /* Темно-серый */
+    color: #333;
     padding: 0.7rem;
     font-size: 1rem;
     border: none;
 }
 
 .wedding-day-calendar {
-    /*background-color: #2e7d32; !* Темно-зеленый *!*/
-
     background-color: var(--clr-text-1);
-
     color: white;
     font-weight: bold;
     border-radius: 50%;
@@ -221,22 +183,9 @@ td {
     margin: 0 auto;
 }
 
-/* Адаптивность */
-/*@media (max-width: 480px) {*/
-/*    .month {*/
-/*        padding: 1.5rem;*/
-/*    }*/
-
-/*    td {*/
-/*        padding: 0.5rem;*/
-/*    }*/
-/*}*/
-
-
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /*color: var(--text-color);*/
 
     color: var(--clr-text-1);
 
@@ -248,7 +197,6 @@ body {
 }
 
 header {
-    /*background-color: #3a3939;*/
     background-color: var(--clr-text-1);
     color: #3a3939;
     padding: 1rem 0;
@@ -286,7 +234,6 @@ nav a:hover {
 
 section {
     padding: 1rem 1rem;
-    /*min-height: 100vh;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -300,11 +247,7 @@ section {
 }
 
 h1, h2, h3, h4 {
-    /*font-family: 'Playfair Display', serif;*/
-    /*color: var(--primary-color);*/
-
     font-family: 'Cormorant Garamond', serif;
-
     color: var(--clr-text-1);
 }
 
@@ -315,6 +258,7 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
+    font-style: italic;
     margin-bottom: 2rem;
     text-align: center;
     margin-top: 0;
@@ -327,20 +271,6 @@ h3 {
 }
 
 
-/*!* Секции *!*/
-/*.hero-section {*/
-/*    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/images/couple.jpg');*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    text-align: center;*/
-/*    color: white;*/
-/*    padding-top: 8rem;*/
-/*}*/
-
-/*.hero-content {*/
-/*    max-width: 800px;*/
-/*    margin: 0 auto;*/
-/*}*/
 
 .date {
     font-size: 2rem;
@@ -374,13 +304,8 @@ h3 {
     text-align: center;
 }
 
-/*#location {*/
-/*    padding-bottom: 4rem;*/
-/*}*/
 
 .location-section {
-    /*background-image: url('/static/images/background-plita.jpeg');*/
-    /*background-color: var(--background);*/
     padding-bottom: 4rem;
 }
 
@@ -391,28 +316,6 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-
-/*@media (max-width: 768px) {*/
-/*    .location-info {*/
-/*        padding: 1.5rem;*/
-/*    }*/
-
-/*    .location-info h3 {*/
-/*        font-size: 1.5rem;*/
-/*    }*/
-
-/*    .location-info p {*/
-/*        font-size: 1.1rem;*/
-/*    }*/
-/*}*/
-
-/*.location-image {*/
-    /*flex: 1;*/
-    /*min-width: 300px;*/
-    /*width: 100%;*/
-    /*border-radius: 8px;*/
-    /*box-shadow: 0 4px 12px rgba(0,0,0,0.1);*/
-/*}*/
 
 .location-image  {
     width: 100%;
@@ -441,7 +344,6 @@ h3 {
 }
 
 .dresscode-section {
-    /*background-image: url('/static/images/background-plita.jpeg');*/
     padding-bottom: 4rem;
 }
 
@@ -506,24 +408,15 @@ h3 {
 }
 
 
-
-.rsvp-section {
-    /*background-color: var(--background);*/
-    /*background-image: url('/static/images/background-plita.jpeg');*/
-}
-
 .rsvp-content {
     max-width: 600px;
     margin: 2rem auto;
     background-color: var(--clr-background);
-    /*background-color: white;*/
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    /*margin-bottom: 2rem;*/
 }
 
-/* Форма */
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -542,14 +435,13 @@ input[type="text"] {
     border-radius: 4px;
     font-size: 1rem;
     transition: all 0.3s ease;
-    /* Добавляем отступ если убрали label */
     margin-top: 0.5rem;
 }
 
 input[type="text"]:focus {
-    outline: none; /* Убираем стандартную синюю обводку */
-    border-color: var(--clr-text-1); /* Цвет границы как у вашего акцентного цвета */
-    box-shadow: 0 0 0 3px rgba(129, 144, 113, 0.3); /* Тень вашего цвета вместо синей */
+    outline: none;
+    border-color: var(--clr-text-1);
+    box-shadow: 0 0 0 3px rgba(129, 144, 113, 0.3);
 }
 
 .radio-group {
@@ -596,7 +488,7 @@ input[type="text"]:focus {
 }
 
 .companion {
-    display: none; /* Скрываем полностью */
+    display: none;
     opacity: 0;
     height: 0;
     overflow: hidden;
@@ -604,21 +496,11 @@ input[type="text"]:focus {
 }
 
 .companion.visible {
-    display: block; /* Показываем */
+    display: block;
     opacity: 1;
     height: auto;
 }
 
-/*.companion-field {*/
-/*    display: none;*/
-/*    opacity: 0;*/
-/*    transition: opacity 0.3s ease;*/
-/*}*/
-
-/*.companion-field.visible {*/
-/*    display: block;*/
-/*    opacity: 1;*/
-/*}*/
 
 .submit-btn {
     background-color: var(--clr-text-1);
@@ -635,80 +517,18 @@ input[type="text"]:focus {
 }
 
 .submit-btn:hover {
-    background-color: var(--clr-text-1); /* Цвет границы как у вашего акцентного цвета */
-    box-shadow: 0 0 0 3px rgba(129, 144, 113, 0.3); /* Тень вашего цвета вместо синей */
+    background-color: var(--clr-text-1);
+    box-shadow: 0 0 0 3px rgba(129, 144, 113, 0.3);
 }
 
-/* Футер */
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--clr-text-1);
     color: var(--light-text);
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 1.1rem;
 }
 
-/* Адаптивность */
-/*@media (max-width: 768px) {*/
-/*    section {*/
-/*        padding: 5rem 1rem;*/
-/*    }*/
-
-/*    h1 {*/
-/*        font-size: 2.5rem;*/
-/*    }*/
-
-/*    h2 {*/
-/*        font-size: 2rem;*/
-/*    }*/
-
-/*    .date {*/
-/*        font-size: 1.5rem;*/
-/*    }*/
-
-/*    .countdown span {*/
-/*        font-size: 3rem;*/
-/*    }*/
-
-/*    nav li {*/
-/*        margin: 0 0.8rem;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 480px) {*/
-/*    .hero-content h1 {*/
-/*        font-size: 2rem;*/
-/*    }*/
-
-/*    .date {*/
-/*        font-size: 1.3rem;*/
-/*        padding: 0.3rem 1rem;*/
-/*    }*/
-
-/*    nav ul {*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*        display: none;*/
-/*    }*/
-
-/*    nav.active ul {*/
-/*        display: flex;*/
-/*    }*/
-
-/*    !*.mobile-menu-btn {*!*/
-/*    !*    display: block;*!*/
-/*    !*    position: absolute;*!*/
-/*    !*    top: 1rem;*!*/
-/*    !*    right: 1rem;*!*/
-/*    !*    background: none;*!*/
-/*    !*    border: none;*!*/
-/*    !*    color: white;*!*/
-/*    !*    font-size: 1.5rem;*!*/
-/*    !*    cursor: pointer;*!*/
-/*    !*}*!*/
-/*}*/
-
-/* Таймер */
 .countdown-container {
     text-align: center;
     margin: 2rem 0;
@@ -740,7 +560,6 @@ footer {
 .countdown-number {
     font-size: 2.2rem;
     font-weight: bold;
-    /*color: var(--dark-green);*/
 
     color: var( --clr-text-1);
 
@@ -749,7 +568,6 @@ footer {
 
 .countdown-separator {
     font-size: 2rem;
-    /*color: var(--secondary-color);*/
 
     color: var(--clr-text-1);
 
@@ -759,24 +577,18 @@ footer {
 
 .countdown-label {
     font-size: 0.9rem;
-    /*color: var(--text-color);*/
-
     color: var(--clr-text-1);
-
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-/* Тайминг мероприятия */
 .timing-section {
-    /*background-color: var(--light-text);*/
-    /*background-image: url('/static/images/background-plita.jpeg');*/
-    background-size: cover;       /* Растягивает фото на весь блок */
-    background-position: center;  /* Центрирует изображение */
-    background-repeat: no-repeat; /* Запрещает повторение */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    padding-top: 1rem; /* Минимальный отступ сверху */
-    padding-bottom: 3rem; /* Нормальный отступ снизу */
+    padding-top: 1rem;
+    padding-bottom: 3rem;
     border-radius: 10px;
 }
 
@@ -788,7 +600,6 @@ footer {
 
 .timing-time {
     font-weight: bold;
-    /*color: var(--dark-green);*/
 
     color: var( --clr-text-1);
 
@@ -802,91 +613,10 @@ footer {
 }
 
 
-/* Мобильное меню */
 .mobile-menu-btn {
     display: none;
 }
 
-/*@media (max-width: 768px) {*/
-/*    .we-wait {*/
-/*        font-size: 2.5rem;*/
-/*    }*/
-
-/*    #calendar p {*/
-/*        font-size: 1.4rem;*/
-/*    }*/
-
-/*    .countdown-grid {*/
-/*        flex-wrap: wrap;*/
-/*        justify-content: center;*/
-/*        gap: 10px;*/
-/*    }*/
-
-/*    .countdown-item {*/
-/*        min-width: 50px;*/
-/*    }*/
-
-/*    .countdown-number {*/
-/*        font-size: 1.8rem;*/
-/*    }*/
-
-/*    .countdown-separator {*/
-/*        display: none;*/
-/*    }*/
-
-/*    table {*/
-/*        font-size: 0.8rem;*/
-/*    }*/
-
-/*    th, td {*/
-/*        padding: 0.3rem;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 768px) {*/
-/*    .mobile-menu-btn {*/
-/*        display: block;*/
-/*        position: fixed;*/
-/*        top: 15px;*/
-/*        right: 15px;*/
-/*        background: var(--clr-text-1);*/
-/*        color: white;*/
-/*        border: none;*/
-/*        padding: 10px;*/
-/*        border-radius: 4px;*/
-/*        z-index: 1001;*/
-/*        font-size: 1.5rem;*/
-/*    }*/
-
-/*    nav ul {*/
-/*        display: none;*/
-/*        flex-direction: column;*/
-/*        position: fixed;*/
-/*        top: 0;*/
-/*        left: 0;*/
-/*        width: 100%;*/
-/*        height: 100vh;*/
-/*        background: rgba(58, 57, 57, 0.95);*/
-/*        padding: 60px 20px;*/
-/*        z-index: 1000;*/
-/*    }*/
-
-/*    nav.active ul {*/
-/*        display: flex;*/
-/*    }*/
-
-/*    nav li {*/
-/*        margin: 1rem 0;*/
-/*    }*/
-
-/*    nav a {*/
-/*        font-size: 1.2rem;*/
-/*        padding: 1rem;*/
-/*    }*/
-/*}*/
-
-
-/*Шкала планов на свадьбу*/
 
 .photo-timeline {
     padding: 40px 20px;
@@ -904,12 +634,11 @@ footer {
 }
 
 .timeline-container {
-    max-width: 900px; /* Уменьшили максимальную ширину */
+    max-width: 900px;
     margin: 0 auto;
     position: relative;
 }
 
-/* Вертикальная линия */
 .timeline-container::before {
     content: '';
     position: absolute;
@@ -921,7 +650,6 @@ footer {
     background: var(--clr-text-1);
 }
 
-/* Элементы таймлайна */
 .timeline-item {
     display: flex;
     justify-content: space-between;
@@ -935,13 +663,13 @@ footer {
 }
 
 .timeline-img {
-    width: 30%; /* Уменьшили ширину блока с фото */
+    width: 30%;
     overflow: hidden;
     border-radius: 6px;
 }
 
 .timeline-img.transparent-bg {
-    background-color: transparent; /* Для прозрачных изображений */
+    background-color: transparent;
 }
 
 .timeline-img img {
@@ -954,13 +682,12 @@ footer {
 }
 
 .timeline-content {
-    width: 50%; /* Увеличили ширину текстового блока */
+    width: 50%;
     padding-left: 13rem;
 }
 
 .timeline-content-reverse {
-    width: 50%; /* Увеличили ширину текстового блока */
-    /*padding-left: 13rem;*/
+    width: 50%;
 }
 
 .timeline-text {
@@ -971,14 +698,7 @@ footer {
     font-weight: 400;
 }
 
-/*.timeline-text strong {*/
-/*    font-weight: 600;*/
-/*    display: block;*/
-/*    margin-top: 5px;*/
-/*    font-size: 1.5rem;*/
-/*}*/
 
-/* Точки на линии */
 .timeline-item::after {
     content: '';
     position: absolute;
@@ -993,57 +713,9 @@ footer {
     box-shadow: 0 0 0 2px var(--text-color);
 }
 
-/* Адаптивность */
-/*@media (max-width: 768px) {*/
-/*    .section-title {*/
-/*        font-size: 1.8rem;*/
-/*        margin-bottom: 30px;*/
-/*    }*/
-
-/*    .timeline-container::before {*/
-/*        left: 25px;*/
-/*    }*/
-
-/*    .timeline-item,*/
-/*    .timeline-item.reverse {*/
-/*        flex-direction: column;*/
-/*        margin-bottom: 30px;*/
-/*    }*/
-
-/*    .timeline-img,*/
-/*    .timeline-content {*/
-/*        width: 100%;*/
-/*    }*/
-
-/*    .timeline-img img {*/
-/*        height: 180px;*/
-/*    }*/
-
-/*    .timeline-item::after {*/
-/*        left: 25px;*/
-/*        top: 90px;*/
-/*    }*/
-
-/*    .timeline-content {*/
-/*        margin-top: 15px;*/
-/*        padding: 15px;*/
-/*    }*/
-
-/*    !*.timeline-text {*!*/
-/*    !*    font-size: 1.2rem;*!*/
-/*    !*}*!*/
-
-/*    !*.timeline-text strong {*!*/
-/*    !*    font-size: 1.3rem;*!*/
-/*    !*}*!*/
-/*}*/
-
-/*Конец шкалы*/
 
 .wishes-section {
     align-items: center;
-   /*background-color: var(--background);*/
-   /* background-image: url('/static/images/background-plita.jpeg');*/
 }
 
 .wishes-title {
@@ -1051,9 +723,8 @@ footer {
     font-family: 'Cormorant Garamond', serif;
     font-size: 4rem;
     font-weight: 600;
-    margin-bottom: 1.2rem; /* Уменьшено */
+    margin-bottom: 1.2rem;
     position: relative;
-    /*display: inline-block;*/
     letter-spacing: 1px;
 }
 
@@ -1084,18 +755,6 @@ footer {
 }
 
 
-/*@media (max-width: 768px) {*/
-/*    .wishes-title {*/
-/*        font-size: 2.5rem;*/
-/*    }*/
-
-/*    .wishes-text {*/
-/*        font-size: 1.2rem;*/
-/*        padding: 1.5rem;*/
-/*        margin: 0 1rem;*/
-/*    }*/
-/*}*/
-
 input[type="text"]::placeholder {
     color: #999;
     font-style: italic;
@@ -1108,9 +767,7 @@ input[type="text"]:focus::placeholder {
 
 
 
-/* МОБИЛЬНАЯ АДАПТИВНОСТЬ */
 @media (max-width: 768px) {
-    /* Общие стили */
     section {
         padding: 3rem 1rem;
     }
@@ -1120,7 +777,6 @@ input[type="text"]:focus::placeholder {
         margin-bottom: 1.5rem;
     }
 
-    /* Герой секция */
     .hero-section {
         height: 60vh;
     }
@@ -1133,7 +789,6 @@ input[type="text"]:focus::placeholder {
 
     .names {
         font-size: 1.3rem;
-        /*top: 20px;*/
         top: 3rem;
     }
 
@@ -1143,7 +798,6 @@ input[type="text"]:focus::placeholder {
         padding: 0.4rem 1rem;
     }
 
-    /* Календарь */
     .we-wait {
         font-size: 2.2rem;
     }
@@ -1166,7 +820,6 @@ input[type="text"]:focus::placeholder {
         font-size: 0.9rem;
     }
 
-    /* Дресс-код */
     .dresscode-section .container {
         gap: 25px;
     }
@@ -1175,7 +828,6 @@ input[type="text"]:focus::placeholder {
         max-width: 100%;
     }
 
-    /* Локация */
     .location-info {
         padding: 1.5rem;
         margin: 0 1rem;
@@ -1189,7 +841,6 @@ input[type="text"]:focus::placeholder {
         font-size: 1.1rem;
     }
 
-    /* Пожелания */
     .wishes-title {
         font-size: 2.2rem;
     }
@@ -1201,7 +852,6 @@ input[type="text"]:focus::placeholder {
         margin: 0 1rem;
     }
 
-    /* Таймер */
     .countdown-number {
         font-size: 1.8rem;
     }
@@ -1210,7 +860,6 @@ input[type="text"]:focus::placeholder {
         font-size: 0.8rem;
     }
 
-    /* Форма RSVP */
     .rsvp-content {
         padding: 1.5rem;
         margin: 1rem;
@@ -1232,7 +881,6 @@ input[type="text"]:focus::placeholder {
 }
 
 @media (max-width: 480px) {
-    /* Еще более мелкие экраны */
     section {
         padding: 2rem 0.5rem;
     }
@@ -1241,7 +889,6 @@ input[type="text"]:focus::placeholder {
         font-size: 1.8rem !important;
     }
 
-    /* Навигация */
     nav li {
         margin: 0 0.5rem;
     }
@@ -1251,7 +898,6 @@ input[type="text"]:focus::placeholder {
         padding: 0.3rem;
     }
 
-    /* Герой */
     .hero-section {
         height: 50vh;
     }
@@ -1263,7 +909,6 @@ input[type="text"]:focus::placeholder {
 
     .names {
         font-size: 1.1rem;
-        /*top: 15px;*/
         top: 3rem;
     }
 
@@ -1272,7 +917,6 @@ input[type="text"]:focus::placeholder {
         top: 3rem;
     }
 
-    /* Календарь */
     .we-wait {
         font-size: 1.8rem;
     }
@@ -1286,7 +930,6 @@ input[type="text"]:focus::placeholder {
         font-size: 0.8rem;
     }
 
-    /* Таймер обратного отсчета */
     .countdown-grid {
         gap: 3px;
     }
@@ -1303,7 +946,6 @@ input[type="text"]:focus::placeholder {
         font-size: 0.7rem;
     }
 
-    /* Форма */
     .rsvp-content {
         padding: 1rem;
     }
@@ -1313,7 +955,6 @@ input[type="text"]:focus::placeholder {
     }
 }
 
-/* Особые исправления для очень маленьких экранов */
 @media (max-width: 360px) {
     .hero-content {
         margin-top: 30%;
@@ -1325,8 +966,7 @@ input[type="text"]:focus::placeholder {
     }
 
     .names {
-        font-size: 1rem; /* Немного увеличим шрифт */
-        /*top: 20px; !* Меньше сдвиг *!*/
+        font-size: 1rem;
         top: 3rem;
         margin-bottom: 0.3rem;
     }
@@ -1350,7 +990,6 @@ input[type="text"]:focus::placeholder {
     }
 }
 
-/* Исправление для таймлайна (если он используется) */
 @media (max-width: 768px) {
     .timeline-container::before {
         left: 20px;
@@ -1365,27 +1004,23 @@ input[type="text"]:focus::placeholder {
     }
 }
 
-/* Предотвращение горизонтального скролла */
 html, body {
     overflow-x: hidden;
     width: 100%;
 }
 
-/* Исправление для изображений */
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Улучшение читаемости на мобильных */
 @media (max-width: 768px) {
     .hero-content {
-        margin-top: 25%; /* Сильнее опускаем на мобильных */
+        margin-top: 25%;
     }
 
     .names {
         font-size: 1rem;
-        /*top: 30px; !* Меньше сдвиг на мобильных *!*/
         top: 3rem;
     }
 
@@ -1400,17 +1035,16 @@ img {
     }
 
     p {
-        font-size: 1.1rem;
-        line-height: 1.6;
+        font-size: 1.4rem;
+        line-height: 1;
+    }
+
+    #location p {
+        font-size: 1.4rem;
     }
 }
 
 
-
-
-
-
-/* Секция пожеланий */
 .wishes-section {
     padding: 4rem 1rem;
 }
@@ -1479,7 +1113,6 @@ img {
     font-weight: 600;
 }
 
-/* Адаптивность для мобильных */
 @media (max-width: 768px) {
     .wishes-section {
         padding: 3rem 1rem;
@@ -1530,7 +1163,6 @@ img {
     }
 }
 
-/* Анимация появления */
 @keyframes fadeInUp {
     from {
         opacity: 0;
