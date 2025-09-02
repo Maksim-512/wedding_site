@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS rsvp_responses (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    attendance BOOLEAN NOT NULL,
+    companion TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

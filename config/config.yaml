@@ -1,0 +1,28 @@
+#database:
+#  host: ${POSTGRES_HOST:-localhost}
+#  port: ${POSTGRES_PORT:-5432}
+#  username: ${POSTGRES_USER:-postgres}
+#  password: ${POSTGRES_PASSWORD:-0512}
+#  name: ${POSTGRES_DB:-wedding_website}
+#  max_open_conns: 10
+#  max_idle_conns: 5
+#  conn_max_lifetime: 30
+
+database:
+  host: db
+  port: 5432
+  username: postgres
+  password: postgres
+  name: wedding
+  max_open_conns: 10
+  max_idle_conns: 5
+  conn_max_lifetime: 30
+
+http:
+  port: 8081
+  read_timeout: 5s
+  write_timeout: 10s
+
+telegram:
+  bot_token: ""
+  chat_id: ""
