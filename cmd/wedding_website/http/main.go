@@ -72,7 +72,7 @@ func main() {
 	router.Use(middleware.Recoverer)
 
 	router.Get("/", HomeHandler)
-	router.Post("/rsvp", rsvpHandler.HandleRSVP)
+	router.Post("/", rsvpHandler.HandleRSVP)
 
 	fs := http.FileServer(http.Dir("internal/static"))
 	router.Handle("/static/*", http.StripPrefix("/static/", fs))
