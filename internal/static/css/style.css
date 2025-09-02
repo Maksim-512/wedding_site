@@ -104,8 +104,11 @@
     font-size: 4rem;
 }
 
+#start-time {
+    font-size: 4rem;
+}
 
-#location p {
+#location-description {
     font-size: 2.5rem;
 }
 
@@ -113,7 +116,7 @@ p {
     color: var(--clr-text-2);
     font-family: 'Cormorant Garamond', 'Georgia', serif;
     margin-bottom: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     font-size: 3rem;
     line-height: 1;
 }
@@ -767,6 +770,7 @@ input[type="text"]:focus::placeholder {
 
 
 
+
 @media (max-width: 768px) {
     section {
         padding: 3rem 1rem;
@@ -1039,7 +1043,11 @@ img {
         line-height: 1;
     }
 
-    #location p {
+    #start-time {
+        font-size: 2.5rem;
+    }
+
+    #location-description {
         font-size: 1.4rem;
     }
 }
